@@ -1,0 +1,14 @@
+Email
+	Sender(1)			Person(Imie, Nazwisko, Email)
+								string, string, string
+	To (1 -> k)			List<Person>
+	CC (0 -> l)			List<Person>  copy
+	--BCC blind copy informacja niejawna
+	
+	Topic (1)			string
+	Body (1)			string
+	Footer (1)			string
+	
+	Attachment (0 -> n)	List<Attachment>
+						Attachment(FileName, Extension, FilePath)
+									string, string, string 
